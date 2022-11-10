@@ -24,6 +24,7 @@ The test was run with 2 epochs in training and 10% of the original corpus
 Results with 5 epochs and full corpus:
 
 https://drive.google.com/file/d/1m_98pYCGuWnGKUe6pezcxyOS5C26bZhe/view?usp=share_link
+
 Citation required by model developer:
 
 @inproceedings{akbik2018coling,
