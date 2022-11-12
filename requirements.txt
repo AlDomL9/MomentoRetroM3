@@ -55,7 +55,7 @@ catkin==0.7.29
 catkin-pkg==0.5.2
 certifi==2021.10.8
 cffi @ file:///tmp/build/80754af9/cffi_1625814692085/work
-chardet @ file:///tmp/build/80754af9/chardet_1607706775000/work
+chardet==3.0.4
 charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
 clang==5.0
 clear-cache==1.0.0
@@ -78,7 +78,7 @@ contextlib2 @ file:///Users/ktietz/demo/mc3/conda-bld/contextlib2_1630668244042/
 controller_manager==0.18.4
 controller_manager_msgs==0.18.4
 cookiecutter @ file:///tmp/build/80754af9/cookiecutter_1617748928239/work
-cryptography @ file:///tmp/build/80754af9/cryptography_1633520369886/work
+cryptography==38.0.3
 cssselect==1.1.0
 cv_bridge==1.13.0
 cycler==0.10.0
@@ -90,13 +90,14 @@ dask==2021.10.0
 datasets==2.6.1
 debugpy @ file:///tmp/build/80754af9/debugpy_1629214122703/work
 decorator @ file:///tmp/build/80754af9/decorator_1632776554403/work
+deep-translator==1.9.1
 defusedxml @ file:///tmp/build/80754af9/defusedxml_1615228127516/work
 Deprecated==1.2.13
 diagnostic_analysis==1.9.7
 diagnostic_common_diagnostics==1.9.7
 diagnostic_updater==1.9.7
 diff-match-patch @ file:///Users/ktietz/demo/mc3/conda-bld/diff-match-patch_1630511840874/work
-dill==0.3.5.1
+dill==0.3.6
 distributed @ file:///tmp/build/80754af9/distributed_1635956221111/work
 distro==1.7.0
 docutils==0.16
@@ -135,15 +136,23 @@ gmpy2==2.0.8
 google-auth==2.6.6
 google-auth-oauthlib==0.4.6
 google-pasta==0.2.0
+googletrans==3.1.0a0
 greenlet @ file:///tmp/build/80754af9/greenlet_1628888132713/work
 grpcio==1.44.0
+h11==0.9.0
+h2==3.2.0
 h5py==3.1.0
 HeapDict @ file:///Users/ktietz/demo/mc3/conda-bld/heapdict_1630598515714/work
 howdoi==2.0.19
+hpack==3.0.0
+hstspreload==2022.11.1
 html5lib @ file:///Users/ktietz/demo/mc3/conda-bld/html5lib_1629144453894/work
+httpcore==0.9.1
+httpx==0.13.3
 huggingface-hub==0.10.1
+hyperframe==5.2.0
 hyperopt==0.2.7
-idna @ file:///tmp/build/80754af9/idna_1622654382723/work
+idna==2.10
 image_geometry==1.13.0
 imagecodecs @ file:///tmp/build/80754af9/imagecodecs_1635529108216/work
 imageio @ file:///tmp/build/80754af9/imageio_1617700267927/work
@@ -192,9 +201,11 @@ laser_geometry==1.6.7
 lazy-object-proxy @ file:///tmp/build/80754af9/lazy-object-proxy_1616529027849/work
 libarchive-c @ file:///tmp/build/80754af9/python-libarchive-c_1617780486945/work
 libclang==14.0.1
+libretranslatepy==2.1.1
 llvmlite==0.37.0
 locket==0.2.1
-lxml @ file:///tmp/build/80754af9/lxml_1616443220035/work
+loguru==0.6.0
+lxml==4.9.1
 Markdown==3.3.6
 MarkupSafe @ file:///tmp/build/80754af9/markupsafe_1607027305082/work
 matplotlib @ file:///tmp/build/80754af9/matplotlib-suite_1634667019719/work
@@ -215,7 +226,7 @@ mpmath==1.2.1
 msgpack @ file:///tmp/build/80754af9/msgpack-python_1612287166301/work
 multidict==6.0.2
 multipledispatch @ file:///tmp/build/80754af9/multipledispatch_1607574243360/work
-multiprocess==0.70.13
+multiprocess==0.70.14
 munkres==1.1.4
 murmurhash==1.0.9
 mypy-extensions==0.4.3
@@ -255,6 +266,7 @@ parso @ file:///tmp/build/80754af9/parso_1617223946239/work
 partd @ file:///tmp/build/80754af9/partd_1618000087440/work
 path @ file:///tmp/build/80754af9/path_1623603407737/work
 pathlib2 @ file:///tmp/build/80754af9/pathlib2_1625585682511/work
+pathos==0.3.0
 pathspec==0.7.0
 patsy==0.5.2
 pep8==1.7.1
@@ -265,7 +277,9 @@ pkginfo==1.7.1
 plac==1.1.3
 pluggy @ file:///tmp/build/80754af9/pluggy_1615976318790/work
 ply==3.11
+pox==0.3.2
 poyo @ file:///tmp/build/80754af9/poyo_1617751526755/work
+ppft==1.7.6.6
 pptree==3.1
 preshed==3.0.8
 prometheus-client @ file:///tmp/build/80754af9/prometheus_client_1623189609245/work
@@ -288,6 +302,7 @@ pydeck==0.7.1
 pydocstyle @ file:///tmp/build/80754af9/pydocstyle_1621600989141/work
 pydot==1.4.2
 pyerfa @ file:///tmp/build/80754af9/pyerfa_1621556109336/work
+PyExecJS==1.5.1
 pyflakes @ file:///tmp/build/80754af9/pyflakes_1617200973297/work
 PyGithub==1.55
 Pygments @ file:///tmp/build/80754af9/pygments_1629234116488/work
@@ -328,10 +343,11 @@ QtAwesome @ file:///tmp/build/80754af9/qtawesome_1615991616277/work
 qtconsole @ file:///tmp/build/80754af9/qtconsole_1632739723211/work
 QtPy @ file:///tmp/build/80754af9/qtpy_1629397026935/work
 regex @ file:///tmp/build/80754af9/regex_1628063347754/work
-requests @ file:///tmp/build/80754af9/requests_1629994808627/work
+requests==2.28.1
 requests-oauthlib==1.3.1
 resource_retriever==1.12.7
 responses==0.18.0
+rfc3986==1.5.0
 rich==12.4.4
 rope @ file:///tmp/build/80754af9/rope_1623703006312/work
 rosbag==1.14.13
@@ -475,6 +491,9 @@ tornado @ file:///tmp/build/80754af9/tornado_1606942317143/work
 tqdm @ file:///tmp/build/80754af9/tqdm_1635330843403/work
 traitlets @ file:///tmp/build/80754af9/traitlets_1632522747050/work
 transformers==4.24.0
+translate==3.6.1
+translate-api==4.9.5
+translators==5.4.8
 typed-ast @ file:///tmp/build/80754af9/typed-ast_1624953673314/work
 typing-extensions==3.7.4.3
 tzdata==2022.1

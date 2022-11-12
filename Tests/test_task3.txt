@@ -1,0 +1,3 @@
+Un robot no puede dañar a un ser humano o, por inacción, permitir que un ser humano sufra daños.
+Un robot debe obedecer las órdenes que le den los seres humanos, excepto cuando tales órdenes entren en conflicto con la Primera Ley.
+Un robot debe proteger su propia existencia siempre que dicha protección no entre en conflicto con la Primera o Segunda Ley.1

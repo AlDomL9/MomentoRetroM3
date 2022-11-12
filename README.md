@@ -1,7 +1,5 @@
 # Momento_de_Retroalimentacion_Modulo_3_NLP
 ## Task 1
-Implementado utilizando el model 
-
 Implemented using model: distilbert-base-uncased-finetuned-sst-2-english
 
 Created by: Hugging Face
@@ -41,3 +39,11 @@ Citation required by model developer:
 
 }
 
+## Task 3
+Implemented using translators: py-translate and Google Translate API (No APi Keys requiered, although use is limited. However the solver should run just fine for two or three runs)
+
+Datasets saved in path: /Datasets/DatasetsTask3
+
+Test datasets saved in path: /Tests
+
+The test was prepared using a three-lines text and its translated reference.

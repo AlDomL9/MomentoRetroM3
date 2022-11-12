@@ -33,10 +33,15 @@ class Task2 ():
     -------
     solve(verbose = False):
         Trains ner model and shows results for training
+    
+    test():
+        Trains a ner model with reduced corpus and with less epochs and shows
+        results for training.
         
     """
     
-    def __init__(self, epochs = 5, percent_examples_to_train = 1.0, data_folder = "../Datasets/DatasetsTask2"):
+    def __init__(self, epochs = 5, percent_examples_to_train = 1.0, 
+                 dataset_path = "../Datasets/DatasetsTask2"):
         """
         Construct attributes for the class.
 
@@ -56,7 +61,7 @@ class Task2 ():
         -------
             None
         """
-        self.dataFolder = data_folder
+        self.dataFolder = dataset_path
         self.trainer = Trainer(epochs = epochs, 
                                percent_examples_to_train = percent_examples_to_train, 
                                data_folder = self.dataFolder)

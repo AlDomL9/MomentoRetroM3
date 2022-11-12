@@ -39,7 +39,7 @@ class Task1():
         
     """
     
-    def __init__(self, datasetPath = "../Datasets/task1_dataset.txt"):
+    def __init__(self, dataset_path = "../Datasets/task1_dataset.txt"):
         """
         Construct attributes for the class.
 
@@ -49,7 +49,7 @@ class Task1():
                 Path to test dataset
             
         """
-        self.datasetPath = datasetPath
+        self.datasetPath = dataset_path
         
         # Load model from hugging face
         self.sentiment_pipeline = pipeline(model = "distilbert-base-uncased-finetuned-sst-2-english")
@@ -142,7 +142,7 @@ class Task1():
     
     def test(self, verbose = True):
         """
-        Test implementation with a controlled dataset
+        Test implementation with a controlled dataset.
 
         Parameters
         ----------
