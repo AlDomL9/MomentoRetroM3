@@ -22,7 +22,7 @@ from flair.trainers import ModelTrainer
 from flair.visual.training_curves import Plotter
 
 #__________________________________Classes_____________________________________
-class Trainer():
+class Trainer:
     """
     Class to train a ner model.
 
@@ -120,7 +120,7 @@ class Trainer():
 
         # Train
         trainer.train('resources/taggers/ner-english',
-                      train_with_dev=True,
+                      train_with_dev=True, # you can set this to false, use dev as your "test" or held-out set, and plot the dev loss. I noticed that your plot doesnt have a test/eval loss! 
                       max_epochs = self.epochs)
         
     def plot_results(self):
