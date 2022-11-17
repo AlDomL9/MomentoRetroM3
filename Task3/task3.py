@@ -108,7 +108,7 @@ class Task3():
         
         return corpus
         
-    def __create_reference(self, file_name, verbose = False):
+    def __create_reference(self, file_name, verbose = False): # same comment as in task 1: should be single underscore to indicate a private method! 
         """
         Create reference.
 
@@ -130,8 +130,8 @@ class Task3():
         filePath = os.path.join(self.datasetPath, file_name)
         
         # Open file and build reference
-        file = open(filePath, 'r')
-        reference = file.readlines()
+        file = open(filePath, 'r') # same comment as in task 1:  use "with" to open 
+        reference = file.readlines() 
         for i in range(len(reference)):
             reference[i] = reference[i].replace("\n", "")
         file.close()
@@ -290,8 +290,8 @@ class Task3():
         
         """
         # For each translator show results
-        for i in range(len(scores)):
-            print(translators_names[i], "score:", str(scores[i]))
+        for translator_name, score in zip(translators_names, scores):
+            print(f'{translator_name} score: {score}')
     
     def solve(self, verbose = False):
         """
