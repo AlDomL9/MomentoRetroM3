@@ -22,7 +22,7 @@ from flair.trainers import ModelTrainer
 from flair.visual.training_curves import Plotter
 
 #__________________________________Classes_____________________________________
-class Trainer():
+class Trainer:
     """
     Class to train a ner model.
 
@@ -120,7 +120,7 @@ class Trainer():
 
         # Train
         trainer.train('resources/taggers/ner-english',
-                      train_with_dev=True,
+                      train_with_dev=False,
                       max_epochs = self.epochs)
         
     def plot_results(self):

@@ -70,11 +70,11 @@ class Task1():
         
         """
         # Open file
-        file = open(self.datasetPath, 'r')
-        
-        # Read lines and close file
-        lines = file.readlines()
-        file.close()
+        with open(self.datasetPath, 'r') as file: 
+            lines = file.readlines()
+            if verbose:
+                  print("Lines extracted from: '", self.datasetPath, "'")
+            return lines
         
         if verbose: print("Lines extracted from: '", self.datasetPath, "'")
         
@@ -106,7 +106,7 @@ class Task1():
             inference = self.sentiment_pipeline(data)
             inferences.append(inference[0]["label"])
         
-        if verbose: print("Inferences made:", str(len(inferences)))
+        if verbose: print("Number of inferences made:", str(len(inferences)))
         
         return inferences
     

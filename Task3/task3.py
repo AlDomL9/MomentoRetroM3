@@ -130,8 +130,9 @@ class Task3():
         filePath = os.path.join(self.datasetPath, file_name)
         
         # Open file and build reference
-        file = open(filePath, 'r')
-        reference = file.readlines()
+        with open(filePath, 'r') as file:
+            reference = file.readlines()
+            
         for i in range(len(reference)):
             reference[i] = reference[i].replace("\n", "")
         file.close()
@@ -290,8 +291,8 @@ class Task3():
         
         """
         # For each translator show results
-        for i in range(len(scores)):
-            print(translators_names[i], "score:", str(scores[i]))
+        for translator_name, score in zip(translators_names, scores):
+            print(f'{translator_name} score : {score}')
     
     def solve(self, verbose = False):
         """
